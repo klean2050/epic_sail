@@ -42,7 +42,7 @@ tiles_ecg_model/
 
 ## TILES Dataset
 
-Tracking Individual Performance with Sensors (TILES) is a project holding multimodal data sets for the analysis of stress, task performance, behavior, and other factors pertaining to professionals engaged in a high-stress workplace environments. Biological, environmental, and contextual data was collected from hospital nurses, staff, and medical residents both in the workplace and at home over time. Labels of human experience were collected using a variety of psychologically validated questionnaires sampled on a daily basis at different times during the day. In this work, we utilize the TILES ECG data from the publicly available dataset, that we download from [here](https://tiles-data.isi.edu/), to pre-train an ECG encoder to assist the affect recognition process.
+Tracking Individual Performance with Sensors (TILES) is a project holding multimodal data sets for the analysis of stress, task performance, behavior, and other factors pertaining to professionals engaged in a high-stress workplace environments. Biological, environmental, and contextual data was collected from hospital nurses, staff, and medical residents both in the workplace and at home over time. Labels of human experience were collected using a variety of psychologically validated questionnaires sampled on a daily basis at different times during the day. In this work, we utilize the TILES ECG data from [here](https://tiles-data.isi.edu/), to pre-train an ECG encoder to assist the affect recognition process.
 
 ## Pre-Training Framework
 
@@ -66,7 +66,7 @@ python src/scripts/supervised_epic.py
 
 ## Submission
 
-We fine-tune a model instance for every scenario and fold and save the test predictions at ``.npy`` files. We randomly select a subset of training data as validation set based on each scenario's assumptions and based on the performance on this set we select to submit the predictions of either the pre-trained ECG encoder, the pre-trained fusion network, or the fusion network trained from scratch. We use the code in ``make_submission.ipynb`` to construct the ``results`` folder.
+We fine-tune a model instance for every scenario and fold and save the test predictions at ``.npy`` files. We randomly select a subset of training data as validation set based on each scenario's assumptions and based on the performance on this set we select to submit the predictions of either the pre-trained ECG encoder, the pre-trained fusion network, or trained from scratch. We use the code in ``make_submission`` to construct the ``results`` folder.
 
 ## Results & Checkpoints
 
@@ -85,4 +85,4 @@ In this study we made use of the following repositories:
 ## Authors
 * [Kleanthis Avramidis](https://klean2050.github.io): PhD Student in Computer Science, USC SAIL
 
-### Note: Please keep this repository *private* until further notice
+#### Note: Please keep this repository *private* until further notice
