@@ -4,9 +4,6 @@ data/
 runs/
 build/
 dist/
-results/
-ckpt/BIG*
-# experiments/
 *.egg-info
 
 # Compiled source #
