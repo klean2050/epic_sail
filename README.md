@@ -84,5 +84,3 @@ In this study we made use of the following repositories:
 
 ## Authors
 * [Kleanthis Avramidis](https://klean2050.github.io): PhD Student in Computer Science, USC SAIL
-
-#### Note: Please keep this repository *private* until further notice
